@@ -1,0 +1,60 @@
+{
+  "seed": 42,
+  "paper_source": "https://state-of-seo-2026.flyrank.ai/",
+  "before_random_split": {
+    "split": "random row split (before)",
+    "train_rows": 24000,
+    "test_rows": 6000,
+    "train_clients": 32,
+    "test_clients": 31,
+    "precision_at_10": 0.9,
+    "precision_at_50": 0.86,
+    "average_precision": 0.6826322984541677,
+    "roc_auc": 0.6683846778424116,
+    "test_base_rate": 0.542
+  },
+  "after_grouped_client_split": {
+    "split": "grouped client holdout (after)",
+    "train_rows": 23837,
+    "test_rows": 6163,
+    "train_clients": 25,
+    "test_clients": 7,
+    "precision_at_10": 0.8,
+    "precision_at_50": 0.58,
+    "average_precision": 0.538617385511588,
+    "roc_auc": 0.5502774919540293,
+    "test_base_rate": 0.5109524582184002
+  },
+  "leakage_probe": {
+    "average_precision": 1.0,
+    "roc_auc": 1.0,
+    "used_in_final_model": false
+  },
+  "clean_features": [
+    "impressions_90d",
+    "clicks_90d",
+    "sessions_90d",
+    "ctr",
+    "avg_position",
+    "engagement_rate",
+    "content_age_days",
+    "days_since_last_update",
+    "word_count",
+    "search_volume",
+    "cpc",
+    "competition_level",
+    "content_type",
+    "main_intent",
+    "age_tier",
+    "freshness_tier",
+    "word_count_tier",
+    "impression_tier",
+    "position_tier"
+  ],
+  "error_counts": {
+    "threshold_errors": 2789,
+    "false_positives": 1617,
+    "false_negatives": 1172
+  },
+  "claims": "observed/measured/directional/decision-support only; no causal claim"
+}
