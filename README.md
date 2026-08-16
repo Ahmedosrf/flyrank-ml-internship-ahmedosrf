@@ -1,11 +1,29 @@
-# FlyRank ML Internship — Starter Repo
+# FlyRank ML Internship — Ahmed Osrof’s Applied ML Portfolio
 
-**Applied Search Intelligence: Google Search Ranking & Discoverability**
+[![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![DuckDB](https://img.shields.io/badge/Data-DuckDB-FFF000?logo=duckdb&logoColor=111827)](https://duckdb.org/)
+[![scikit--learn](https://img.shields.io/badge/ML-scikit--learn-F7931E?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
+[![License](https://img.shields.io/badge/license-MIT-2ea44f)](LICENSE)
 
-This is the starting point for the FlyRank ML Internship. You **clone it into your own public
-repo** (one click — *Use this template*), build everything there, and submit that repo URL on
-each assignment in your portal — it's your workspace, your submission, and your portfolio all
-at once. The rhythm is simple: do the work, commit it, submit on the card. Done.
+> **Applied Search Intelligence:** an end-to-end machine-learning portfolio focused on Google Search ranking, discoverability, feature leakage, baseline modeling, evaluation, and decision-support workflows.
+
+This repository is Ahmed Osrof’s working copy and portfolio for the FlyRank ML internship. It combines guided assignments with a reproducible reference pipeline, documented data-safety rules, and generated reports that make the modeling process reviewable from raw features to ranked recommendations.
+
+**Important:** the repository uses anonymized training data and must not be used to store private client data. Read [`DATA_USE.md`](DATA_USE.md) before running or extending the project.
+
+## Portfolio Highlights
+
+| Area | Evidence in this repository |
+|---|---|
+| Problem framing | Research-question, task-framing, and data-contract notebooks. |
+| Leakage-aware ML | Feature-leakage checks, signal audits, and client-holdout evaluation. |
+| Modeling | Transparent baseline, logistic regression, decision tree, and random forest workflows. |
+| Evaluation | Precision-at-k reporting, ranked review queues, charts, and Markdown/PDF reports. |
+| Reproducibility | Dependency ranges, runnable scripts, documented data rules, and sample outputs. |
+
+## Original Internship Guidance
+
+The sections below preserve the official starter-repository instructions, including setup, data access, assignment notebooks, and the reference pipeline.
 
 Everything here runs on a small **anonymized** slice of real FlyRank search data. No credentials,
 no private client data, no setup headaches.
