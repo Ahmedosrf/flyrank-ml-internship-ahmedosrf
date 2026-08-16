@@ -1,0 +1,16 @@
+{
+  "rows_ranked": 30000,
+  "candidate_rows": 9759,
+  "base_rate": 0.5420666666666667,
+  "precision_at_10": 0.6,
+  "precision_at_50": 0.42,
+  "signal_verdicts": {
+    "volume": "CONFIRMED",
+    "ctr_vs_position": "CONFIRMED"
+  },
+  "score_features": [
+    "impressions_90d",
+    "avg_position",
+    "ctr"
+  ]
+}
