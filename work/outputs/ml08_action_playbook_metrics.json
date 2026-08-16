@@ -1,0 +1,66 @@
+{
+  "seed": 42,
+  "rows_scored": 30000,
+  "clients": 32,
+  "queue_file": "work/outputs/ranked_action_playbook.csv",
+  "figure_file": "work/figures/w07_reason_code_mix.png",
+  "model": "LogisticRegression full snapshot for research prioritization only",
+  "features": [
+    "impressions_90d",
+    "clicks_90d",
+    "sessions_90d",
+    "ctr",
+    "avg_position",
+    "engagement_rate",
+    "content_age_days",
+    "days_since_last_update",
+    "word_count",
+    "search_volume",
+    "cpc",
+    "competition_level",
+    "content_type",
+    "main_intent",
+    "age_tier",
+    "freshness_tier",
+    "word_count_tier",
+    "impression_tier",
+    "position_tier"
+  ],
+  "forbidden_features": [
+    "is_declining",
+    "is_declining_label",
+    "target",
+    "trend_direction",
+    "trend_pct"
+  ],
+  "top10_reason_codes": [
+    "R1_VISIBLE_STALE_LOW_CTR",
+    "R1_VISIBLE_STALE_LOW_CTR",
+    "R1_VISIBLE_STALE_LOW_CTR",
+    "R1_VISIBLE_STALE_LOW_CTR",
+    "R1_VISIBLE_STALE_LOW_CTR",
+    "R1_VISIBLE_STALE_LOW_CTR",
+    "R1_VISIBLE_STALE_LOW_CTR",
+    "R1_VISIBLE_STALE_LOW_CTR",
+    "R1_VISIBLE_STALE_LOW_CTR",
+    "R1_VISIBLE_STALE_LOW_CTR"
+  ],
+  "reason_code_counts": {
+    "R7_LOW_EXPOSURE_MONITOR": 12691,
+    "R2_VISIBLE_LOW_CTR": 6225,
+    "R4_STALE_CONTENT": 5790,
+    "R1_VISIBLE_STALE_LOW_CTR": 3534,
+    "R6_VISIBLE_MONITOR": 1445,
+    "R5_THIN_CONTENT": 294,
+    "R3_STALE_THIN_CONTENT": 21
+  },
+  "intended_use": "human-reviewed content prioritization; non-production",
+  "automation_prohibited": [
+    "publish",
+    "delete",
+    "redirect",
+    "rewrite",
+    "mass edit",
+    "causal outcome promise"
+  ]
+}
